@@ -1,4 +1,4 @@
-var throttle = require('lodash.throttle');
+let throttle = require('lodash.throttle');
 
 const FORM_INPUTS = 'feedback-form-state';
 const refs = {
@@ -37,4 +37,4 @@ function getFormData() {
     console.log(error.message);
   }
 }
-getFormData();
+
