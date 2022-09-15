@@ -1,12 +1,12 @@
-let throttle = require(‘lodash.throttle’);
-const STORAGE_KEY = ‘feedback-form-state’;
+let throttle = require('lodash.throttle');
+const STORAGE_KEY = 'feedback-form-state';
 
 const el = {
-  form: document.querySelector(‘.feedback-form’),
+  form: document.querySelector('.feedback-form'),
 };
 
-el.form.addEventListener(‘submit’, onFormSubmit);
-el.form.addEventListener(‘input’, throttle(onTextareaEmailInput, 500));
+el.form.addEventListener('submit', onFormSubmit);
+el.form.addEventListener('input', throttle(onTextareaEmailInput, 500));
 populateTextarea();
 
 function onFormSubmit(evt) {
